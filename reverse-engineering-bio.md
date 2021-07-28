@@ -1,7 +1,7 @@
- ---
+---
 title: Reverse Engineering Biology
 date: 26-07-2021
- ---
+---
  🔬 Biology | 💻 Software | Notes
 ------- | -------- | -----
 [nucleotide](https://en.wikipedia.org/wiki/Nucleotide) | [byte](https://en.wikipedia.org/wiki/Byte) |
