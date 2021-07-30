@@ -58,7 +58,7 @@ torch.save(model, "ten-mnet.pt")
 
 ## Running:
 
-```Python
+```python
 import torch.nn as nn
 import torch.nn.functional as F
 import torch
