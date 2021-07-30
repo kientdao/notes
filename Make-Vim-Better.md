@@ -1,6 +1,6 @@
 ---
 title: Make Vim Better
-data: 30-07-2021
+date: 30-07-2021
 ---
 Finding files:
 nnoremap ,f :find *
