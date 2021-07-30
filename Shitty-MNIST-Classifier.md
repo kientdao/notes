@@ -5,7 +5,7 @@ date: 30-07-2021
 
 ## The Net:
 
-```python3
+```python
 from tqdm import trange
 import torch.nn as nn
 import torch.nn.functional as F
@@ -58,7 +58,7 @@ torch.save(model, "ten-mnet.pt")
 
 ## Running:
 
-```Python3
+```Python
 import torch.nn as nn
 import torch.nn.functional as F
 import torch
