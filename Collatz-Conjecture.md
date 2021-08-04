@@ -2,7 +2,7 @@
 title: Collatz Conjecture
 date: 03-08-2021
 ---
-# What is it?
+## What is it?
 
 The Collatz Conjecture can be defined simply as:
 
