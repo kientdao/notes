@@ -6,14 +6,14 @@ date: 13-08-2021
 ## Boot Sector
 512 bytes @ cylinder 0, head 0, sector 0 that ends in `0xAA55` so the BIOS knows it's legit.
 
-```asm
+```nasm
 e9 fd ff 00 00 00 00 00 00 00 00 00 00 00 00 00
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 [ 29 more lines with sixteen zero-bytes each ]
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 55 aa
 ```
 
-```asm
+```nasm
 ; Infinite loop (e9 fd ff)
 loop:
     jmp loop 
@@ -26,7 +26,7 @@ dw 0xaa55
 
 Instead of just writing 0's, throw some text up:
 
-```asm
+```nasm
 mov ah, 0x0e ; tty mode
 mov al, 'H'
 int 0x10
