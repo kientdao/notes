@@ -3,7 +3,7 @@ title: Obligation Kills Curiosity
 date: 15-11-2021
 ---
 
-I wrote an article about the importance of curiosity [here](https://torbet.co/posts/Best-Trait-2021)
+I wrote an article about the importance of curiosity [here]()
 
 I used to live and breath building cool shit - sitting down with an idea and working for hours until I either A) Got it to work or B) couldn't solve the problem, but learned a lot in the process.
 
