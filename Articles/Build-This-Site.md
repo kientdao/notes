@@ -7,7 +7,6 @@ coverImage: '/assets/posts/lighthouse.webp'
 I think that everyone should have a personal site, even if you're not in the development scene - and it doesn't always have to be a massive, expensive headache to set up. While this post is aimed at developers, it can still show you have to make site from the ground up, and completely for free!
 
 While at present, it may not have much traffic, it is optimised as fuck - 100% lighthouse scores, quick load times, almost instantaneous indexing by Google, the whole shebang.
-![](./lighthouse.webp)
 
 ![image](https://drive.google.com/uc?export=view&id=1bqWUzrro1RTn8akmqWWHse-lo76MATyr)
 
