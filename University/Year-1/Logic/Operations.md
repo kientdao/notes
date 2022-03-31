@@ -28,8 +28,6 @@ body > *:first-child {
 body > *:last-child {
   margin-bottom: 0 !important; }
 
-a {
-  color: #4183C4; }
 a.absent {
   color: #cc0000; }
 a.anchor {
@@ -78,7 +76,6 @@ h1 {
 
 h2 {
   font-size: 24px;
-  border-bottom: 1px solid #cccccc;
   color: black; }
 
 h3 {
