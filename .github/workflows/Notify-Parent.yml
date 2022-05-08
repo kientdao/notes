@@ -22,7 +22,7 @@ jobs:
     - name: Github REST API Call
       env:
         CI_TOKEN: ${{ secrets.CI_TOKEN }}
-        PARENT_REPO: torbet/Site2
+        PARENT_REPO: torbet/minimal
         PARENT_BRANCH: main
         WORKFLOW_ID: ${{ secrets.WORKFLOW_ID }}
       run: |
