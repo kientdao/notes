@@ -1,6 +1,7 @@
 ---
 title: Collatz Conjecture
 date: 03-08-2021
+private: false
 ---
 ## What is it?
 

@@ -1,6 +1,7 @@
 ---
 title: logic 1 exam 2022
 date: 02-05-2022
+private: false
 ---
 
 ## 1 Symbolisations

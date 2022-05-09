@@ -3,6 +3,7 @@ title: Mortality, Grief, and Everything In between
 date: 07-09-2021
 description: Unedited reflections on what it means to be alive.
 coverImage: '/assets/posts/memento-mori.png'
+private: false
 ---
 
 A few months ago, I received a call. I was out with friends, and thought that it was just dad being dad and checking up on me, seeing if I was okay. My mother had passed away. It was common knowledge in my circle that she had been battling with cancer for the greater part of 10 years, and that night, the battle ended. I reluctantly told them, and amidst all of the sympathies and reassurances, I remember vividly being unfeeling. Although I had expected this inevitability for years, I never thought that it would actually happen, and in that moment, I didn't know what to feel.

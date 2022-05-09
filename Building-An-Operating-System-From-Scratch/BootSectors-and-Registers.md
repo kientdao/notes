@@ -1,6 +1,7 @@
 ---
 title: Boot Sector and Registers
 date: 13-08-2021
+private: false
 ---
 
 ## Boot Sector

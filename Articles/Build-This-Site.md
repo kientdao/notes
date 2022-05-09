@@ -3,6 +3,7 @@ title: How I Built My Site (with Perfect Lighthouse Score)
 date: 12-03-2021
 description: This is How I Built My Portfolio Site and personal blog using React and NextJS, and how it achieved a Perfect Lighthouse Score. I rundown all the fudamental issues and how to solve them, aswell as how to optimise your page for Google.
 coverImage: '/assets/posts/lighthouse.webp'
+private: false
 ---
 I think that everyone should have a personal site, even if you're not in the development scene - and it doesn't always have to be a massive, expensive headache to set up. While this post is aimed at developers, it can still show you have to make site from the ground up, and completely for free!
 

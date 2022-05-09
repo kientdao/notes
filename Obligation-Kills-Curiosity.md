@@ -1,6 +1,7 @@
 ---
 title: Obligation Kills Curiosity
 date: 15-11-2021
+private: false
 ---
 
 I wrote an article about the importance of curiosity [here]()

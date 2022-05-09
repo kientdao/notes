@@ -1,6 +1,7 @@
 ---
 title: Logical Operations
 date: 31-03-2022
+private: false
 ---
 
 <!DOCTYPE html>

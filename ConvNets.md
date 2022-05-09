@@ -1,6 +1,7 @@
 ---
 title: Understanding Convolutional Neural Networks
 date: 06-08-2021
+private: false
 ---
 
 ## What is a ConvNet

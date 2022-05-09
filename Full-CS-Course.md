@@ -1,6 +1,7 @@
 ---
 title: First Principles Computer Science Course
 date: 28-07-2021
+private: false
 ---
 ## From the Transistor to the Web Browser
 

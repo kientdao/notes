@@ -3,6 +3,7 @@ title: Just Start
 date: 19-02-2021
 description: How to stop inactivity and just start what you want to do. The flywheel concept of getting things off the ground and the best and only time to start is now!
 coverImage: '/assets/posts/procrastination.png'
+private: false
 ---
 
 > The best time to plant a tree was twenty years ago. The second best time is now.

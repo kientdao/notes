@@ -1,6 +1,7 @@
 ---
 title: Make Vim Better
 date: 30-07-2021
+private: false
 ---
 
 Finding files:

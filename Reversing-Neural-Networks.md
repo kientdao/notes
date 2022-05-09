@@ -1,6 +1,7 @@
 ---
 title: Reversing Neural Networks
 date: 31-03-2022
+private: false
 ---
 
 What if you could run a deep learning model in reverse? Train up an MNIST classifier, and get the "perfect" image representation of the number 5?

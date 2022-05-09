@@ -1,6 +1,7 @@
 ---
 title: Reverse Engineering Biology
 date: 26-07-2021
+private: false
 ---
  🔬 Biology | 💻 Software | Notes
 ------- | -------- | -----

@@ -1,6 +1,7 @@
 ---
 title: Assignment 2
 date: 15-03-2022
+private: false
 ---
 
 # Technical Description

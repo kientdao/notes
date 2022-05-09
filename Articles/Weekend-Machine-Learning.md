@@ -3,6 +3,7 @@ title: I Learned Machine Learning in a Weekend
 date: 09-04-2021
 description: I Learned Machine Learning in a Weekend, here's how I did it and the steps that I would recommend to take if you want to do the same!
 coverImage: '/assets/posts/neural-net.png'
+private: false
 ---
 
 Machine learning and AI as a whole can seem hugely daunting when you're first getting started. Over a weekend, I *painstakingly* sifted through all of the "beginner" guides on how to get started, so that you don't have to.

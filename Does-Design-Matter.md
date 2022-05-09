@@ -1,6 +1,7 @@
 ---
 title: Does Design Matter?
 date: 06-05-2022
+private: false
 ---
 
 I'm not very good at making things look pretty, and CSS pisses me off to no end.

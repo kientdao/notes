@@ -1,6 +1,7 @@
 ---
 title: Shitty MNIST Classifier
 date: 30-07-2021
+private: false
 ---
 
 ## The Net:

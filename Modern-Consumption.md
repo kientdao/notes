@@ -1,6 +1,7 @@
 ---
 title: Consumption in the Modern Day
 date: 09-08-2021
+private: false
 ---
 
 Oh the dream. We all travel. Vacation forever. Live life as digital nomads. See beautiful things, eat amazing food, journey to distant lands…
