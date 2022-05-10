@@ -4,8 +4,6 @@ date: 28-07-2021
 private: false
 ---
 
-## Table of contents
-
 ## From the Transistor to the Web Browser
 
 Hiring is hard, a lot of modern CS education is really bad, and it's hard to find people who understand the modern computer stack from first principles.
