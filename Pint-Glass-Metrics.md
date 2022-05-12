@@ -1,6 +1,7 @@
 ---
 title: Pint Glass Metrics
 date: 12-05-2022
+private: false
 ---
 
 Here's a tier-list of the 17 most popular pints in Scotland - it might be a bit controversioal, but Carling is far to gassy for my taste, and if you're on a pub crawl, you don't want to fill yourself up with Guiness (it's about 3 loaves of bread per pint). Tennents carries a bad reputation, but if you're on a budget, its price and widespread availability make it an undeniable staple across the country.
