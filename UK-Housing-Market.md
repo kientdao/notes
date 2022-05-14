@@ -1,5 +1,5 @@
 ---
-title: The UK Housing Market Has Fucked Me
+title: WTF is the UK housing market
 date: 14-05-2022
 private: false
 ---
