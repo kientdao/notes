@@ -28,7 +28,7 @@ int main() {
 
 Running `g++ -fno-asynchronous-unwind-tables -fno-exceptions -fno-rtti -fverbose-asm -Wall -Wextra printf.cc -O3 -masm=intel -S -o printf`
 
-```asm
+```nasm
 	.section	__TEXT,__text,regular,pure_instructions
 	.build_version macos, 12, 0	sdk_version 12, 3
 	.intel_syntax noprefix
@@ -53,7 +53,7 @@ L_str:                                  ## @str
 
 And using `objdump -d` on the compiled binary from standard `g++ printf.cc`:
 
-```asm
+```nasm
 printf:	file format mach-o 64-bit x86-64
 
 Disassembly of section __TEXT,__text:
@@ -86,7 +86,7 @@ Disassembly of section __TEXT,__stub_helper:
 
 Compare this to the `cout` implementation:
 
-```asm
+```nasm
 	.section	__TEXT,__text,regular,pure_instructions
 	.build_version macos, 12, 0	sdk_version 12, 3
 	.intel_syntax noprefix
