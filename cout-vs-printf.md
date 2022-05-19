@@ -1,6 +1,7 @@
 ---
 title: C++ cout VS printf
 date: 18-05-2022
+private: false
 ---
 
 Since C++ supports (most) of C's functions, let's test the new and improved IO utils performance!
