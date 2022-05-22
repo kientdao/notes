@@ -1,6 +1,6 @@
 ---
 title: Writing Chess Engines
-date:: 21-05-2003
+date: 21-05-2003
 private: false
 ---
 
