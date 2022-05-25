@@ -1,5 +1,5 @@
 ---
-title: How to Fix a Bricked Kindle
+title: How to Fix a Bricked Kindle via USB
 date: 25-05-2022
 private: false
 ---
