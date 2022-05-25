@@ -4,7 +4,7 @@ date: 25-05-2022
 private: false
 ---
 
-** NOTE: **  This process will completely reset your kindle to factory settings.
+**NOTE:**  This process will completely reset your kindle to factory settings.
 
 1. Plug your kindle into your computer.
 2. Navigate to the root directory:
