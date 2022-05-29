@@ -23,7 +23,7 @@ Agner indicates that there's a way to optimize this code - by realizing that the
 
 I use a piece of paper to confirm the theory, first...
 
-[![Theory](https://i.stack.imgur.com/wzzgt.png)](https://i.stack.imgur.com/wzzgt.png)
+![](https://i.stack.imgur.com/wzzgt.png)
 
 ...and of course, he is right - in each loop iteration we can compute the new result based on the old one, by adding a "delta". This delta starts at value "A+B", and is then incremented by "2*A" on each step.
 
