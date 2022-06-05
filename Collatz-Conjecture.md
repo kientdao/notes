@@ -15,7 +15,7 @@ F(x) =
      \end{cases}
 $$
 
-With any number being passed in recursivly converging on 1 (apparently).
+With any number being passed in recursivly converging on 1 (apparently). [[cout-vs-printf]] C++ cout VS printf
 
 Still unsolved, but verified for everynumber under 2<sup>68</sup>, so gotta start around 3 quintillion.
 
