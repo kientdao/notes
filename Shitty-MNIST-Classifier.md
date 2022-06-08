@@ -4,7 +4,7 @@ date: 30-07-2021
 private: false
 ---
 
-## The Net:
+## The Net
 
 ```python
 from tqdm import trange
@@ -33,7 +33,7 @@ class Net(torch.nn.Module):
 
 model = Net()
 
-lossF = torch.nn.MSELoss() 
+lossF = torch.nn.MSELoss()
 optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
 
 for epoch in range(5):
@@ -48,7 +48,7 @@ for epoch in range(5):
         output = model(xTensor)
 
         optimizer.zero_grad()
-        
+
         loss = lossF(output, yTensor.unsqueeze(-1))
         loss.backward()
         optimizer.step()
@@ -57,7 +57,7 @@ for epoch in range(5):
 torch.save(model, "ten-mnet.pt")
 ```
 
-## Running:
+## Running
 
 ```python
 import torch.nn as nn

@@ -2,9 +2,10 @@
 title: How I Built My Site (with Perfect Lighthouse Score)
 date: 12-03-2021
 description: This is How I Built My Portfolio Site and personal blog using React and NextJS, and how it achieved a Perfect Lighthouse Score. I rundown all the fudamental issues and how to solve them, aswell as how to optimise your page for Google.
-coverImage: '/assets/posts/lighthouse.webp'
+coverImage: "/assets/posts/lighthouse.webp"
 private: false
 ---
+
 I think that everyone should have a personal site, even if you're not in the development scene - and it doesn't always have to be a massive, expensive headache to set up. While this post is aimed at developers, it can still show you have to make site from the ground up, and completely for free!
 
 While at present, it may not have much traffic, it is optimised as fuck - 100% lighthouse scores, quick load times, almost instantaneous indexing by Google, the whole shebang.
@@ -33,21 +34,21 @@ This is how I get all of the posts, it's designed for use in React so the syntax
 
 ```jsx
 export async function getPosts() {
-		const posts = []
-    const context = require.context('../posts', false, /\.md$/)
+  const posts = [];
+  const context = require.context("../posts", false, /\.md$/);
 
-    for (const key of context.keys()) {
-        const post = key.slice(2);
-        const content = await import(`../posts/${post}`);
-        const meta = matter(content.default)
-        posts.push({
-            slug: post.replace('.md',''),
-            title: meta.data.title,
-            date: meta.data.date,
-            description: meta.data.description,
-        })
-    }
-    return posts;
+  for (const key of context.keys()) {
+    const post = key.slice(2);
+    const content = await import(`../posts/${post}`);
+    const meta = matter(content.default);
+    posts.push({
+      slug: post.replace(".md", ""),
+      title: meta.data.title,
+      date: meta.data.date,
+      description: meta.data.description,
+    });
+  }
+  return posts;
 }
 ```
 
@@ -55,23 +56,30 @@ You can see that it returns a list of objects, each with all the required data t
 
 ```jsx
 function Posts({ allPosts }) {
+  const router = useRouter();
 
-    const router = useRouter()
-
-    return (
-        <div id={styles.container}>
-            <ul>
-                {allPosts.map(function (post, key) {
-                    return (
-                        <li onClick={() => { router.push(`/posts/${post.slug}`) }} key={key} className={styles.tableRow}>
-                            <div className={styles.titleContainer}><h2 className={styles.title}>{post.title}</h2></div>
-                            <h3 className={styles.date}>{formatDate(post.date)}</h3>
-                        </li>
-                    )
-                })}
-            </ul>
-        </div>
-    )
+  return (
+    <div id={styles.container}>
+      <ul>
+        {allPosts.map(function (post, key) {
+          return (
+            <li
+              onClick={() => {
+                router.push(`/posts/${post.slug}`);
+              }}
+              key={key}
+              className={styles.tableRow}
+            >
+              <div className={styles.titleContainer}>
+                <h2 className={styles.title}>{post.title}</h2>
+              </div>
+              <h3 className={styles.date}>{formatDate(post.date)}</h3>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
 }
 ```
 
@@ -79,71 +87,77 @@ Implementing a RSS feed required the same getPosts function, but in pure nodeJS,
 
 ```js
 function getPosts() {
-    var posts = []
-    let filenames = fs.readdirSync("posts");
+  var posts = [];
+  let filenames = fs.readdirSync("posts");
 
-    filenames.forEach((file) => {
-        const str = fs.readFileSync(`posts/${file}`, 'utf8');
-        const meta = matter(str);
-        posts.push({
-            slug: file.replace('.md', ''),
-            title: meta.data.title,
-            date: meta.data.date,
-            description: meta.data.description,
-        })
+  filenames.forEach((file) => {
+    const str = fs.readFileSync(`posts/${file}`, "utf8");
+    const meta = matter(str);
+    posts.push({
+      slug: file.replace(".md", ""),
+      title: meta.data.title,
+      date: meta.data.date,
+      description: meta.data.description,
     });
-    return (posts)
+  });
+  return posts;
 }
 ```
 
 I can then fetch specific posts based on the URL, this object also contains the content of the post, which is rendered to the screen, as well as the other meta-data to be passed as props to the post element. The description is only used for the meta tags for improved SEO:
 
 ```jsx
-export async function getPostBySlug(slug){
-    const fileContent = await import(`../posts/${slug}.md`)
-    const meta = matter(fileContent.default)
-    const post = meta.data
-    const content = meta.content
-    return {
-        title: post.title,
-        date: post.date,
-        description: post.description,
-        content: content
-    }
+export async function getPostBySlug(slug) {
+  const fileContent = await import(`../posts/${slug}.md`);
+  const meta = matter(fileContent.default);
+  const post = meta.data;
+  const content = meta.content;
+  return {
+    title: post.title,
+    date: post.date,
+    description: post.description,
+    content: content,
+  };
 }
 ```
 
-It's pretty simple stuff, which is why I love working with React so much. 
+It's pretty simple stuff, which is why I love working with React so much.
 
 NextJS handles dynamic routing amazingly, this is my [slug].jsx. The post data gets passed to a very simple post layout using React's getStaticProps method like so:
 
 ```jsx
 function Post(props) {
-
-    return (
-        <PostLayout title={props.title} date={formatDate(props.date)} description={props.description}>
-            <div id={styles.post}>
-                <ReactMarkdown source={props.content} renderers={{code: CodeBlock, image: Image}} />
-            </div>
-        </PostLayout>
-    )
+  return (
+    <PostLayout
+      title={props.title}
+      date={formatDate(props.date)}
+      description={props.description}
+    >
+      <div id={styles.post}>
+        <ReactMarkdown
+          source={props.content}
+          renderers={{ code: CodeBlock, image: Image }}
+        />
+      </div>
+    </PostLayout>
+  );
 }
 
-export async function getStaticProps(context){
-    return {
-        props: await getPostBySlug(context.params.slug)
-    }
+export async function getStaticProps(context) {
+  return {
+    props: await getPostBySlug(context.params.slug),
+  };
 }
 
-export async function getStaticPaths(){
-    let paths = await getPosts()
-    paths = paths.map(post => ({
-        params: { slug:post.slug }
-    }));
-    return {
-        paths: paths,
-        fallback: false
-    }
+export async function getStaticPaths() {
+  let paths = await getPosts();
+  paths = paths.map((post) => ({
+    params: { slug: post.slug },
+  }));
+  return {
+    paths: paths,
+    fallback: false,
+  };
 }
 ```
 
@@ -163,13 +177,13 @@ export default function PostLayout(props) {
             </Head>
             <div id={styles.main}>
                 <Header title={props.title} />
-        
+
                 <article id={styles.content}>
-	                <div id={styles.date}>{props.date}</div>
+                 <div id={styles.date}>{props.date}</div>
                     <div id={styles.post}>
                         {props.children}
                         <Mail />
-		                 </div>
+                   </div>
                 </article>
 
             </div>
@@ -186,41 +200,48 @@ This is pretty much everything for my projects section, I still need to tidy up 
 
 ```jsx
 function createData(Title, Description, Language, url) {
-    return { Title, Description, Language, url };
+  return { Title, Description, Language, url };
 }
 
 export default function Repos(props) {
-    const [arrayItems, setArrayItems] = useState([])
-    useEffect(async () => {
-        await fetch('https://api.github.com/users/torbet/repos').then(response => response.json())
-            .then(data => {
-                const items = data.map((arraySingleItem) => {
-                    return (
-                        createData(arraySingleItem.name, arraySingleItem.description, arraySingleItem.language, arraySingleItem.html_url)
-                    );
-                });
-                setArrayItems(items);
-            })
+  const [arrayItems, setArrayItems] = useState([]);
+  useEffect(async () => {
+    await fetch("https://api.github.com/users/torbet/repos")
+      .then((response) => response.json())
+      .then((data) => {
+        const items = data.map((arraySingleItem) => {
+          return createData(
+            arraySingleItem.name,
+            arraySingleItem.description,
+            arraySingleItem.language,
+            arraySingleItem.html_url
+          );
+        });
+        setArrayItems(items);
+      });
+  }, []);
 
-    }, [])
+  const router = useRouter();
 
-    const router = useRouter()
-
-    return (
-        <div id={styles.container}>
-            <ul>
-                {arrayItems.map((row) => (
-                        <li className={styles.tableRow} onClick={() => { router.push(row.url) }} key={row.Title}>
-                            <h2 className={styles.title}>{row.Title}</h2>
-                            <h3 className={styles.subTitle}>{row.Description}</h3>
-                            <h3 className={styles.subTitle}>{row.Language}</h3>
-                        </li>
-                ))}
-            </ul>
-
-        </div>
-
-    );
+  return (
+    <div id={styles.container}>
+      <ul>
+        {arrayItems.map((row) => (
+          <li
+            className={styles.tableRow}
+            onClick={() => {
+              router.push(row.url);
+            }}
+            key={row.Title}
+          >
+            <h2 className={styles.title}>{row.Title}</h2>
+            <h3 className={styles.subTitle}>{row.Description}</h3>
+            <h3 className={styles.subTitle}>{row.Language}</h3>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 ```
 

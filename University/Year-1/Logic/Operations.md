@@ -40,13 +40,13 @@ ______
 
 <p><strong>dn</strong> </p>
 
-<div><pre><code class="language-none">ϕ               ¬¬ϕ 
+<div><pre><code class="language-none">ϕ               ¬¬ϕ
 ______          ______
 ¬¬ϕ             ϕ</code></pre></div>
 
 <p><strong>r</strong> </p>
 
-<div><pre><code class="language-none">ϕ 
+<div><pre><code class="language-none">ϕ
 ______
 ϕ</code></pre></div>
 
@@ -86,9 +86,9 @@ ______              ______
 
 <p><strong>cb</strong> </p>
 
-<div><pre><code class="language-none">ϕ → ψ       
-ψ → ϕ   
-______              
+<div><pre><code class="language-none">ϕ → ψ
+ψ → ϕ
+______
 ϕ ↔ ψ                   </code></pre></div>
 
 <h2 id="toc_7"></h2>
@@ -155,7 +155,7 @@ _________           _________         _________         _________
 
 <p><strong>sc</strong> (T33,T49) </p>
 
-<div><pre><code class="language-none">ϕ ∨ ψ           
+<div><pre><code class="language-none">ϕ ∨ ψ
 ϕ → χ               ϕ → χ
 ψ → χ               ¬ϕ → χ  
 _________           _________
@@ -166,20 +166,21 @@ _________           _________
 <p><strong>dm</strong> (T63-T66) </p>
 
 <div><pre><code class="language-none">¬(ϕ ∧ ψ)        (¬ϕ ∨ ¬ψ)           (ϕ ∧ ψ)            ¬(¬ϕ ∨ ¬ψ)
-___________      ___________         ___________        ___________
+_________________________________        ___________
  (¬ϕ ∨ ¬ψ)       ¬(ϕ ∧ ψ)           ¬(¬ϕ ∨ ¬ψ)         (ϕ ∧ ψ)
 
+(ϕ ∨ ψ) ¬(ϕ ∨ ψ) ¬(¬ϕ ∧ ¬ψ) (¬ϕ ∧ ¬ψ)
 
-(ϕ ∨ ψ)          ¬(ϕ ∨ ψ)           ¬(¬ϕ ∧ ¬ψ)        (¬ϕ ∧ ¬ψ)
-___________      ___________         ___________        ___________
-¬(¬ϕ ∧ ¬ψ)       (¬ϕ ∧ ¬ψ)          (ϕ ∨ ψ)            ¬(ϕ ∨ ψ)</code></pre></div>
+---
+
+¬(¬ϕ ∧ ¬ψ) (¬ϕ ∧ ¬ψ) (ϕ ∨ ψ) ¬(ϕ ∨ ψ)</code></pre></div>
 
 <h2 id="toc_13"></h2>
 
 <p><strong>nb</strong> (T90) </p>
 
-<div><pre><code class="language-none">¬(ϕ ↔ ψ)            (ϕ ↔ ¬ψ)            
-_________           _________   
+<div><pre><code class="language-none">¬(ϕ ↔ ψ)            (ϕ ↔ ¬ψ)
+_________           _________
 (ϕ ↔ ¬ψ)            ¬(ϕ ↔ ψ)            </code></pre></div>
 
 <hr>
@@ -187,30 +188,27 @@ _________           _________
 <p><strong>qn</strong> (T203-T206)</p>
 
 <div><pre><code class="language-none">¬∀xϕx           ¬∃xϕx            ∀xϕx           ∃xϕx
-___________     ___________      ___________    ___________
+_________________________________    ___________
  ∃x¬ϕx          ∀x¬ϕx            ¬∃x¬ϕx         ¬∀x¬ϕx
 
+¬∀x¬ϕx ¬∃x¬ϕx ∀x¬ϕx ∃x¬ϕx
 
-¬∀x¬ϕx          ¬∃x¬ϕx          ∀x¬ϕx           ∃x¬ϕx
-___________     ___________     ___________     ___________
-∃xϕx            ∀xϕx            ¬∃xϕx           ¬∀xϕx</code></pre></div>
+---
+
+∃xϕx ∀xϕx ¬∃xϕx ¬∀xϕx</code></pre></div>
 
 <h2 id="toc_14"></h2>
 
 <p><strong>av</strong> (T231-T232)</p>
 
 <div><pre><code class="language-none">∀xϕx                    ∃xϕx
-___________             ___________ 
+______________________
 ∀yϕy                    ∃yϕy</code></pre></div>
 
 <p><code>Given the total proper substitution of y for x, and provided no variable capturing arises in ϕy.</code></p>
 
 <h2 id="toc_15"></h2>
 
-
-
-
 </body>
 
 </html>
-

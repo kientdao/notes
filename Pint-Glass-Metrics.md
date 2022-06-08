@@ -8,7 +8,7 @@ Here's a tier-list of the 17 most popular pints in Scotland - it might be a bit 
 
 ![](pint-tier-list.png)
 
-What do pint glasses and traffic cones have in common? Scottish teens love to steal them. 
+What do pint glasses and traffic cones have in common? Scottish teens love to steal them.
 Here I track the metrics of the lucrative pint glasses that are currently in my kitchen cupboard.
 
 - [x] Amstel (x 1)

@@ -8,7 +8,7 @@ I wrote an article about the importance of curiosity [here]()
 
 I used to live and breath building cool shit - sitting down with an idea and working for hours until I either A) Got it to work or B) couldn't solve the problem, but learned a lot in the process.
 
-Modern education is failing, it seems like it is designed to kill discovery and experimentation, in all facets. 
+Modern education is failing, it seems like it is designed to kill discovery and experimentation, in all facets.
 
 Maybe it evolved in such a way that curiosity is sacrificed for speed and efficiency - producing as many students who meet accepted industry standards in the shortest possible time, at the least possible expense.
 

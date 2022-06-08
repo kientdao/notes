@@ -5,6 +5,7 @@ private: false
 ---
 
 ## Boot Sector
+
 512 bytes @ cylinder 0, head 0, sector 0 that ends in `0xAA55` so the BIOS knows it's legit.
 
 ```nasm
@@ -17,12 +18,12 @@ e9 fd ff 00 00 00 00 00 00 00 00 00 00 00 00 00
 ```nasm
 ; Infinite loop (e9 fd ff)
 loop:
-    jmp loop 
+    jmp loop
 
 ; Fill with 510 zeros minus the size of the previous code
 times 510-($-$$) db 0
 ; Magic number
-dw 0xaa55 
+dw 0xaa55
 ```
 
 Instead of just writing 0's, throw some text up:
@@ -43,7 +44,7 @@ jmp $ ; jump to current address = infinite loop
 
 ; padding and magic number
 times 510 - ($-$$) db 0
-dw 0xaa55 
+dw 0xaa55
 ```
 
 Write each character of the "Hello" word into the register al (lower part of ax), the bytes 0x0e into ah (the higher part of ax) and raise interrupt 0x10 which is a general interrupt for video services.

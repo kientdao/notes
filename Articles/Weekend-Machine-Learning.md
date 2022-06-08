@@ -2,11 +2,11 @@
 title: I Learned Machine Learning in a Weekend
 date: 09-04-2021
 description: I Learned Machine Learning in a Weekend, here's how I did it and the steps that I would recommend to take if you want to do the same!
-coverImage: '/assets/posts/neural-net.png'
+coverImage: "/assets/posts/neural-net.png"
 private: false
 ---
 
-Machine learning and AI as a whole can seem hugely daunting when you're first getting started. Over a weekend, I *painstakingly* sifted through all of the "beginner" guides on how to get started, so that you don't have to.
+Machine learning and AI as a whole can seem hugely daunting when you're first getting started. Over a weekend, I _painstakingly_ sifted through all of the "beginner" guides on how to get started, so that you don't have to.
 
 Most people recommend an image classifier using the MNIST dataset as your 'hello world'/first machine learning program - I'm not sure if there is just an obscenely high barrier to entry, or if I'm simply just stupid, but for someone who wants to go from zero to something in the world of machine learning, this project seems a bit tricky.
 
@@ -34,18 +34,18 @@ Neural networks require an input and an expected output in order to train. You c
 
 ```python
 def genData(vol, length):
-    
+
     values = []
     labels = []
 
-		data = []
+  data = []
 
     for i in range(vol):
 
         rand = random.randint(0, length)
         data = rand * [1] + (length - rand) * [0]
         random.shuffle(data)
-        
+
         labels.append(data.count(1))
         values.append(data)
 
@@ -87,7 +87,7 @@ optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
 
 You can do a lot of reading for yourself on the different loss functions, there are hundreds of them, but I enjoyed the MSE or cross entropy loss function for linear NN's.
 
-Now, TRAIN, TRAIN, TRAIN! Think of an epoch as a training loop, so in this example, I'm cycling through the data 1000 times: 
+Now, TRAIN, TRAIN, TRAIN! Think of an epoch as a training loop, so in this example, I'm cycling through the data 1000 times:
 
 ```python
 for epoch in (t := trange(1000)):
@@ -137,7 +137,7 @@ class Net(torch.nn.Module):
         return x
 ```
 
-Finally, we can load our saved model, evaluate it, and pass in our new input data! 
+Finally, we can load our saved model, evaluate it, and pass in our new input data!
 
 ```python
 model = torch.load('cnn.pt')

@@ -8,7 +8,7 @@ private: false
 
 A lot of the problems that can benefit from convolutional nerual networks only use 2D-convolutions.
 
-A convolution takes an N-by-N vector kernel, passes it through a filter, and outputs a K-by-K vector, where K<N. 
+A convolution takes an N-by-N vector kernel, passes it through a filter, and outputs a K-by-K vector, where K<N.
 
 ![](https://analyticsindiamag.com/wp-content/uploads/2018/01/conv-full-layer.gif)
 ![](https://media3.giphy.com/media/i4NjAwytgIRDW/giphy.gif)
@@ -25,7 +25,7 @@ Intuitively, the matrix representation of the input vector is multiplied element
 
 ## Pooling
 
->  Spatial invariance is a concept where the location of an object in an image doesn’t affect the ability of the neural network to detect its specific features. Pooling enables the CNN to detect features in various images irrespective of the difference in lighting in the pictures and different angles of the images.
+> Spatial invariance is a concept where the location of an object in an image doesn’t affect the ability of the neural network to detect its specific features. Pooling enables the CNN to detect features in various images irrespective of the difference in lighting in the pictures and different angles of the images.
 
 ## Benefits
 

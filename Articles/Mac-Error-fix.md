@@ -2,7 +2,7 @@
 title: MacBook T2 Chip Error Fix (69832, 69630, and 69624)
 date: 12-02-2021
 description: A summary of my experience when resetting a T2 chip MacBook, and how to resolve the errors - 69832, 69630 and 69624
-coverImage: '/assets/posts/mac-error.png'
+coverImage: "/assets/posts/mac-error.png"
 private: false
 ---
 
@@ -59,7 +59,7 @@ I managed to narrow it down to a problem in the T2 Security Chip, which was impl
 
 Sounds perfect, doesn't it?
 
-## Requirements:
+## Requirements
 
 To perform this process, you must have:
 
@@ -80,9 +80,11 @@ The revive or restore process involves the following steps:
 ## Step 1: Set up the working Mac with Apple Configurator 2 and connect the USB-C cable
 
 1. Verify that:
- - You have the latest version of Apple Configurator 2 installed
- - The Mac with Apple Configurator 2 is plugged into a power source
- - It is connected to the internet
+
+- You have the latest version of Apple Configurator 2 installed
+- The Mac with Apple Configurator 2 is plugged into a power source
+- It is connected to the internet
+
 2. Plug in (along with any adapters needed) the USB-C cable.
 3. Launch Apple Configurator 2.
 
@@ -91,10 +93,10 @@ The revive or restore process involves the following steps:
 1. Press the Sleep/Wake button for about 5 seconds to shut down the Apple notebook computer.
 2. Plug the USB-C cable into the front Thunderbolt port on the left side of the Apple notebook computer.
 3. While holding down the power button, at the same time press all three of the following keys for about 3 seconds:
- ◦ The right Shift key
- ◦ The left Option key
- ◦ The left Control key
-*Note:* You won’t see any screen activity from the computer.
+   ◦ The right Shift key
+   ◦ The left Option key
+   ◦ The left Control key
+   _Note:_ You won’t see any screen activity from the computer.
 
 ![https://help.apple.com/assets/5FB70920680CE2F01B9C1914/5FB70929680CE2F01B9C191C/en_US/d31a69b70e04ef24c8ca6b885250cb31.png](https://help.apple.com/assets/5FB70920680CE2F01B9C1914/5FB70929680CE2F01B9C191C/en_US/d31a69b70e04ef24c8ca6b885250cb31.png)
 
@@ -102,10 +104,12 @@ The revive or restore process involves the following steps:
 
 ## Step 3: Revive the firmware
 
-1. In the Apple Configurator 2  device window, select the Mac whose chip firmware you want to revive.
+1. In the Apple Configurator 2 device window, select the Mac whose chip firmware you want to revive.
 2. Do one of the following:
- - Choose Actions > Advanced > Revive Device, then click Revive.
- - Control-click the selected device, then choose Advanced > Revive Device, then click Revive.
+
+- Choose Actions > Advanced > Revive Device, then click Revive.
+- Control-click the selected device, then choose Advanced > Revive Device, then click Revive.
+
 3. Wait for the process to complete. During this process, an Apple logo will appear and disappear.
 4. After the process completes, your Mac will reboot.
 5. If necessary, use macOS Recovery to reinstall macOS. (See the Apple Support article [How to reinstall macOS from macOS Recovery](https://support.apple.com/HT204904).)
@@ -117,9 +121,8 @@ Optionally, you can choose to restore the device to default and erase everything
 
 ![https://help.apple.com/assets/5FB70920680CE2F01B9C1914/5FB70929680CE2F01B9C191C/en_US/0c83a49b197efaff5158471efb54846c.png](https://help.apple.com/assets/5FB70920680CE2F01B9C1914/5FB70929680CE2F01B9C191C/en_US/0c83a49b197efaff5158471efb54846c.png)
 
-## TLDR:
+## TLDR
+
 If you receive the errors 69832, 69630, or 69624, or cannot format the disk as APFS, use Configurator 2 to restore the T2 chip and sort it out!
-
-
 
 After this, you're free to reset your MacBook and get on with your day. I may even consider using Configurator 2 in the erase process when it comes to selling my laptop, just as an added layer of security.

@@ -2,7 +2,7 @@
 title: Mortality, Grief, and Everything In between
 date: 07-09-2021
 description: Unedited reflections on what it means to be alive.
-coverImage: '/assets/posts/memento-mori.png'
+coverImage: "/assets/posts/memento-mori.png"
 private: false
 ---
 

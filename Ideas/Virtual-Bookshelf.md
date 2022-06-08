@@ -12,7 +12,7 @@ Encourage on REVIEWS <- FOCUS
 
 option for embedded iframe/div in other sites ?
 
-users can enter books by: 
+users can enter books by:
 
 - [export from goodreads](https://www.goodreads.com/review/import)
 - search engine for isbn's
@@ -20,9 +20,9 @@ users can enter books by:
 what information does a book need/what can be retrieved from an ISBN
 
 {
-  'title': title,
-  'author': author,
-  'isbn': isbn,
-  'cover': cover,
-  'date': date,
+'title': title,
+'author': author,
+'isbn': isbn,
+'cover': cover,
+'date': date,
 }
