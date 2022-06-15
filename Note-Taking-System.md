@@ -1,7 +1,7 @@
 ---
 title: My Note Taking System
 date: 06-06-2022
-private: false
+private: true
 ---
 
 - Zettelkasten?
