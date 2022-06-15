@@ -18,3 +18,6 @@ That line basically tells the sudo command that the Touch ID authentication modu
 
 Save the file and you’re done! Now, the next time you use the sudo command, instead of being prompted for your password, you’ll get a dialog box asking you to authenticate with Touch ID, just as you would any other time you needed to authenticate. (And, as an extra bonus, if you choose to click the Enter Password, you’ll get prompted to use either the password or your Apple Watch, if you have one.)
 
+### Notes
+
+- Subsequent updated of MacOS **will** revert this change! 
