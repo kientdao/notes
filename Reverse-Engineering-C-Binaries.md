@@ -102,8 +102,9 @@ at +58 we see a compare to rbp-0x8
 
 Comes up quite a lot in genAns, huh?
 
-We can see taht we init 3 variables to 0x3, 0x4 and 0x2, and then multiply them for the return value.
-alternatively, we can set a breakpoint at *0x0000000100003f2a and look directly at the value in rbp-0x8.
+We can see that we init 3 variables to 0x3, 0x4 and 0x2, and then multiply them for the return value.
+
+Alternatively, we can set a breakpoint at *0x0000000100003f2a and look directly at the value in rbp-0x8.
 
 
 
